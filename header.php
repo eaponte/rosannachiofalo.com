@@ -19,13 +19,13 @@
 			<div class="navbar-collapse collapse">
 				
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="books.html">Books</a></li>
-					<li><a href="guides.html">Reading Group Guides</a></li>
-					<li><a href="questions.html">Q &amp; A</a></li>
-					<li><a href="recipes.html">Recipes</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="books.php">Books</a></li>
+					<li><a href="guides.php">Reading Group Guides</a></li>
+					<li><a href="questions.php">Q &amp; A</a></li>
+					<li><a href="recipes.php">Recipes</a></li>
+					<li><a href="about.php">About</a></li>
+					<li><a href="contact.php">Contact</a></li>
 				</ul>
 
 			</div> <!-- end navbar-collapse -->

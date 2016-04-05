@@ -22,7 +22,7 @@
 
 	<div class="container-fluid">
 	
-		<!--#include file="header.html" -->
+		<?php include "header.php"; ?>
 
 		<div class="container homepage">
 			
@@ -61,7 +61,7 @@
 
 		</div> <!-- end homepage -->
 
-		<!--#include file="footer.html" -->
+		<?php include "footer.php"; ?>
 
 	</div> <!-- end container-fluid -->
 
