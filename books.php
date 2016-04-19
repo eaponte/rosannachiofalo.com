@@ -71,20 +71,19 @@
 							As Claudia unravels the secret of the Cassata cake, she discovers a deeper, fascinating story--one that affirms food can do more than nourish the body…it can stir memories, heal the deepest heartaches, and even act as a bridge to those we love, no matter how far apart.
 						</p>
 
-						<!-- <div class="content-center link-button1">
+						<div class="content-center link-button1">
 							
 							<strong>Read More</strong><br>
 
-							<a class="iframe" href="stella-mia-ch1.html">Chapter 1</a>
-							<a class="iframe" href="stella-mia-reviews.html">Reviews</a>
+							<a class="iframe" href="rosalia-excerpt.html">An Excerpt</a>
 
-						</div> --> <!-- end content-center link-button1 -->
+						</div> <!-- end content-center link-button1 -->
 
 					</div> <!-- end col-md-8 -->
 
 				</div> <!-- end row -->
 
-			</div> <!-- end stella-mia-color -->
+			</div> <!-- end rosalia-color -->
 
 			<div class="cover stella-mia-color">
 				
