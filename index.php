@@ -38,9 +38,7 @@
 					
 					<h2><em>Rosalia's Bittersweet Pastry Shop</em></h2>
 
-					<h2>Available May 2016</h2>
-
-					<a href="http://www.amazon.com/gp/product/1617739375/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1617739375&linkCode=as2&tag=apontares-20&linkId=RUROY2CHGA5IPRTW" target="_blank">Pre-Order Now</a>
+					<a href="http://www.amazon.com/gp/product/1617739375/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1617739375&linkCode=as2&tag=apontares-20&linkId=RUROY2CHGA5IPRTW" target="_blank">Order Now</a>
 
 					<p>
 						Food writer Claudia Lombardo has sampled exquisite dishes by the world's greatest chefs. But when she hears about the remarkable desserts that are created in a pastry shop operated out of a convent in the sleepy Italian hillside town of Santa Lucia del Mela, she wants to write a book featuring the sweets and the story behind their creator--Sorella Agata. But the convent's most famous dessert--a Cassata cake--is what really intrigues Claudia.

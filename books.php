@@ -43,7 +43,7 @@
 						
 						<div class="content-center link-button1">
 							
-							<strong>Pre-Order NOW from</strong><br>
+							<strong>Order NOW from</strong><br>
 
 							<a href="http://www.amazon.com/gp/product/1617739375/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1617739375&linkCode=as2&tag=apontares-20&linkId=RUROY2CHGA5IPRTW" target="_blank">Amazon</a> 
 
