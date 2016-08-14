@@ -36,7 +36,7 @@
 
 			<div class="container">
 
-				<h1 class="hidden-xs"><a href="index.html" title="">Rosanna Chiofalo</a></h1>
+				<h1 class="hidden-xs"><a href="index.php" title="">Rosanna Chiofalo</a></h1>
 
 				<p>AUTHOR of <em>ROSALIA'S BITTERSWEET PASTRY SHOP</em></p>
 
