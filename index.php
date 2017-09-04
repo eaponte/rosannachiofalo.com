@@ -30,27 +30,29 @@
 				
 				<section class="col-md-6 wow fadeInUp">
 					
-					<img src="images/rosalias-bittersweet-pastry-shop-cover.jpg" class="img-responsive img-center">
+					<img src="images/the-sunflower-girl-cover.jpg" class="img-responsive img-center">
 
 				</section> <!-- end col-md-6 -->
 
 				<section class="col-md-6 homepagecovertext">
 					
-					<h2><em>Rosalia's Bittersweet Pastry Shop</em></h2>
+					<h2 style="color: #227733;"><em>The Sunflower Girl</em></h2>
 
-					<a href="http://www.amazon.com/gp/product/1617739375/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1617739375&linkCode=as2&tag=apontares-20&linkId=RUROY2CHGA5IPRTW" target="_blank">Order Now</a>
+					<h3>Coming Summer 2018</h3>
 
-					<p>
-						Food writer Claudia Lombardo has sampled exquisite dishes by the world's greatest chefs. But when she hears about the remarkable desserts that are created in a pastry shop operated out of a convent in the sleepy Italian hillside town of Santa Lucia del Mela, she wants to write a book featuring the sweets and the story behind their creator--Sorella Agata. But the convent's most famous dessert--a Cassata cake--is what really intrigues Claudia.
+					<!-- <a href="http://www.amazon.com/gp/product/1617739375/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1617739375&linkCode=as2&tag=apontares-20&linkId=RUROY2CHGA5IPRTW" target="_blank">Order Now</a> -->
+					<br>
+					<p style="color: #227733;">
+						<em><strong>Rosanna Chiofalo returns with another evocative, beautifully written novel set against the stunning vistas of Tuscany . . .</strong></em>
 					</p>
 					<p>
-						Everyone who samples the cake agrees it is like none other they've tasted. Yet no one can figure out what makes the Cassata so incredibly delicious. Though Sorella Agata insists there is no secret ingredient, Claudia is determined to learn the truth behind the mysterious cake. As she samples each delectable treat--marzipan fruit, rich cream puffs, and decadent cakes--Sorella Agata relates the pastry shop's history and tells of the young woman, Rosalia, who inspired her.
+						In the fields around Tuscany in summertime, sunflowers grow in profusion—wave upon wave of gold and green standing tall against the Italian sky. But for Signora Maria Ferraro, the bright yellow blooms carry only bitter memories. Though she loved them as a child, sunflowers have come to represent the most painful episode of her life. Not even her cherished daughter, Anabella, knows what happened to her during World War II, when the Germans overran her hometown of Florence and Signora Ferraro fell in love with a Resistance fighter. In the aftermath of loss and grief she found salvation through an unlikely source-cultivating roses on her farm in the Tuscan countryside. Now the blossoms symbolize everything that is both good and safe, and she nurtures them with as much care as she guards her past.
 					</p>
 					<p>
-						Kidnapped and separated from her family, Rosalia is subjected to a terrible ordeal--until the nuns find her. As she heals, she learns the art of pastry making, and soon she even finds love with Antonio--an apprentice in the pastry shop. But her heart still aches for the family she lost. And Rosalia knows she will not be whole again until she is reunited with them.
+						Yet to Anabella, the rose farm that once delighted her has become little more than a pretty prison. Despite her beautiful surroundings, Anabella longs for more. During one of her regular visits to Siena to sell their flowers, Anabella encounters a handsome young artist named Dante Galletti. His canvases are filled with images of a girl who looks just like Anabella-and Dante claims to have seen her in his dreams, running through a sunflower field. Through Dante, Anabella begins to see sunflowers, her cloistered existence, and the world itself through new eyes. As their relationship deepens, Anabella knows she will soon have to choose between loyalty to her mother, and the risks and rewards of living on her own terms.
 					</p>
 					<p>
-						As Claudia unravels the secret of the Cassata cake, she discovers a deeper, fascinating story--one that affirms food can do more than nourish the body…it can stir memories, heal the deepest heartaches, and even act as a bridge to those we love, no matter how far apart.
+						Alternating between the viewpoints of both mother and daughter, and between Italy during World War II and a quarter-century later, <em>The Sunflower Girl</em> is a poignant and moving story of the choices we make in the name of love, and the secrets that echo through generations.
 					</p>
 
 				</section> <!-- end col-md-6 -->

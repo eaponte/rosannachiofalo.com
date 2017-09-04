@@ -4,7 +4,8 @@
 /* General */
 
 body {
-	background: #1BBC9B; /* Green */
+	/*background: #1BBC9B;*/ /* Green */
+	background: #B87333; /* Copper */
 	padding-bottom: 20px;
 }
 
@@ -23,7 +24,8 @@ body {
 }
 
 .hdr .container {
-	background: #006A9E; /* Blue */
+	background: #227733; /* Green */
+	/*background: #006A9E;*/ /* Blue */
 }
 
 .content-center {
@@ -38,7 +40,8 @@ footer .container {
 	font: normal 16px "Century Gothic", "Trebuchet MS", Helvetica, Arial, Geneva, sans-serif;
 	color: #fff;
 	text-align: center;
-	background: #1BBC9B; /* Green */
+	background: #B87333; /* Copper */
+	/*background: #1BBC9B;*/ /* Green */
 	padding: 20px;
 }
 
@@ -59,7 +62,8 @@ footer .container a {
 
 .navbar {
 	text-align: center;
-	background-color: #9E9774; /* Gray-Green */
+	background-color: #227733; /* Green */
+	/*background-color: #9E9774;*/ /* Gray-Green */
 	border-bottom: 0px;
 }
 
@@ -71,7 +75,8 @@ footer .container a {
 
 .nav a {
 	padding: 5px !important;
-	border: 1px solid #9E9774; /* Gray-Green */
+	border: 1px solid #227733; /* Green */
+	/*border: 1px solid #9E9774;*/ /* Gray-Green */
 	font: normal 17px Lato, "Century Gothic", "Trebuchet MS", Helvetica, Arial, sans-serif !important;
 	color: #fff !important;
 	text-transform: uppercase;
@@ -110,9 +115,10 @@ footer .container a {
 /* Header */
 
 .hdr {
-	min-height: 250px;
-	background: #006A9E; /* Blue */
-	padding: 50px 25px 15px;
+	min-height: 230px;
+	background: #227733; /* Green */
+	/*background: #006A9E;*/ /* Blue */
+	padding: 20px 25px 15px;
 }
 
 .hdr h1 a{
@@ -134,16 +140,16 @@ footer .container a {
 
 .homepage {
 	z-index: 5;
-	background: #FEEFC8 url("../images/homepage-bg.jpg") center center no-repeat; /* Tan */
-	background-size: cover;
+	background: #FEEFC8; /*url("../images/homepage-bg.jpg") center center no-repeat;*/ /* Tan */
+	/*background-size: cover;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	margin-top: -30px;
+	-moz-background-size: cover;*/
+	margin-top: -40px;
 }
 
 .homepagecovertext {
 	font: normal 16px "PT Serif", Georgia, "Times New Roman", Times, serif;
-	color: #fff;
+	color: #B87333;
 	text-align: center;
 }
 
@@ -162,7 +168,7 @@ footer .container a {
 
 .main {
 	z-index: 5;
-	margin-top: -30px;
+	margin-top: -40px;
 	padding-bottom: 20px;
 	font: normal 18px "PT Serif", Georgia, "Times New Roman", Times, serif;
 	color: #3D3D3D;
@@ -253,7 +259,7 @@ footer .container a {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	border: 5px solid #9E9774; /* Gray-Green */
-	margin: 0 auto 20px;
+	margin: 0 auto 60px;
 }
 
 /* Secondary Pages */

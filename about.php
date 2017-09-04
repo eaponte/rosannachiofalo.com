@@ -27,27 +27,45 @@
 
 			<div class="row">
 
-				<div class="col-md-4">
+				<div class="col-md-5">
 
 					<div class="img-about"></div>
 
-				</div> <!-- end col-md-4 -->
+				</div> <!-- end col-md-5 -->
 
-				<div class="col-md-8">
+				<div class="col-md-5">
 
 					<p>
-						<strong>ROSANNA CHIOFALO</strong> is the author of <strong><em>Bella Fortuna, Carissima, Stella Mia</em></strong> and <strong><em>Seven Days of Christmas</em></strong>, a novella that appears in the <strong><em>When The Snow Falls</em></strong> collection.
+						As a child, I fell in love with books and dreamed of the day when I would write my own. My parents emigrated from Sicily in the early '60s. The New York City neighborhood of Astoria, Queens, where I grew up, along with many other children of immigrants, influenced me and my writing. With my writing, I strive to share the beauty of both the Italian American and Italian culture to my readers. Each of my novels are set in many of the places I have traveled to--another great passion of mine. I hope to travel soon to South America and Australia, where many Italians have also immigrated to, and bring alive the culture of these two wonderful continents in my books.
 					</p>
 
 					<p>
-						An avid traveler, she enjoys setting her novels in the countries she's visited. A first-generation Italian American, her novels also draw on her rich cultural background. When she isn't traveling or daydreaming about her characters, Rosanna keeps busy testing out new recipes in her kitchen.
+						In addition to writing, reading, and traveling, I am also a passionate cook and baker and spend much of my free time testing out new recipes. I also have an obsession with collecting houseplants, much to my husband's chagrin! Next on my bucket list is to learn to sew and make dresses from patterns--something I've longed to do ever since I was a child and watched my mother sew beautiful clothes for the entire family. My favorite articles of clothing that my mother made for me were a dress that matched hers when I was only five-years-old and a polka dot Marilyn Monroe inspired dress my mother had made for my older sister who passed it down to me and which I wore to the wedding of my college roommate.
 					</p>
 
 					<p>
-						Currently, she is hard at work writing her next novel.
+						Readers often ask me where I get my ideas for my books besides my Italian American background and love of Italy. Each of my novels has some aspect of me and my life. In certain books, like <em>Bella Fortuna</em> and <em>Stella Mia</em>, it might be more obvious to readers, especially to my family and longtime friends, but in others like <em>Rosalia's Bittersweet Pastry Shop</em> and <em>The Sunflower Girl</em>, it is not so obvious. Sometimes the stories are more the stories of others whom I have crossed paths with, but their experiences influenced me enough that I wanted to incorporate them in some way in my novels.
 					</p>
 
-				</div> <!-- end col-md-8 -->
+					<p>
+						I love to hear from readers so please feel free to either e-mail me through my website or reach out to me on Facebook and Twitter.
+					</p>
+
+					<p>
+						I hope you enjoy the adventures that my books will take you on, and I hope my characters will inspire you and remain in your memories long after the final page is turned...
+					</p>
+
+					<p>
+						Ciao!
+					</p>
+
+					<p>
+						<strong>Rosanna</strong>
+					</p>
+
+				</div> <!-- end col-md-5 -->
+
+				<div class="col-md-2"></div>
 
 			</div> <!-- end row -->
 
