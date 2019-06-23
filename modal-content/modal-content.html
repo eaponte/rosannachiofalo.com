@@ -1,0 +1,295 @@
+<!-- Rates Modal -->
+
+<div id="view-rates-modal" class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h3>Rates &amp; Pricing</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 bg-color_1 scale_1 margin_1">
+			<div class="title text-center">
+				<h3 class="round-heading"><span class="lnr lnr-users"></span><span class="lnr lnr-bubble" style="display: inline-block; font-size: 26px; position: relative; top: -20px; margin-left: -2px;"></span></h3>
+				<h3 class="sub-heading">Developmental Editing</h3>
+			</div>
+			<p>
+				Use the calculator below to get an approximation of developmental editing costs for your genre.
+			</p>
+			<p>
+				<form id="dev-calc" onsubmit="return false;" onchange="calcChange('dev-calc');">
+					<label for="dev-calc-genre">Genre:</label>
+					<div class="select-container">
+						<span class="lnr lnr-chevron-down"></span>
+						<select id="dev-calc-genre">
+							<option value="250">Avg - All Genres</option>
+							<option value="210">Romance</option>
+							<option value="210">Thriller, Crime and Mystery</option>
+							<option value="230">Sci-fi</option>
+							<option value="220">Fantasy</option>
+							<option value="230">YA</option>
+							<option value="230">Historical Fiction</option>
+							<option value="230">Literary Fiction</option>
+							<option value="270">Children's Fiction</option>
+							<option value="210">Women's Fiction</option>
+							<option value="250">Memoir</option>
+							<option value="310">Non-Fiction</option>
+						</select>
+					</div>
+					<br />
+					<label for="dev-calc-word-count">Approximate Word Count:</label>
+					<div class="select-container">
+						<span class="lnr lnr-chevron-down"></span>
+						<select id="dev-calc-word-count">
+							<option value="0">Select Word Count</option>
+							<option value="1">10,000</option>
+							<option value="2">20,000</option>
+							<option value="3">30,000</option>
+							<option value="4">40,000</option>
+							<option value="5">50,000</option>
+							<option value="6">60,000</option>
+							<option value="7">70,000</option>
+							<option value="8">80,000</option>
+							<option value="9">90,000</option>
+							<option value="10">100,000</option>
+							<option value="11">110,000</option>
+							<option value="12">120,000</option>
+							<option value="13">130,000</option>
+							<option value="14">140,000</option>
+							<option value="15">150,000</option>
+							<option value="16">160,000</option>
+							<option value="17">170,000</option>
+							<option value="18">180,000</option>
+							<option value="19">190,000</option>
+							<option value="20">200,000</option>
+						</select>
+					</div>
+					<div class="estimated-cost">
+						<span><strong>Estimated Cost: </strong>$</span>
+						<div id="dev-calc-result">0.00</div>
+					</div>
+				</form>
+			</p>
+		</div>
+		<div class="col-lg-4 bg-color_1 scale_1 margin_1">
+			<div class="title text-center">
+				<h3 class="round-heading"><span class="lnr lnr-file-empty"></span><span class="lnr lnr-pencil" style="display: inline-block; font-size: 26px; position: relative; top: -10px; margin-left: -15px;"></span></h3>
+				<h3 class="sub-heading">Copyediting</h3>
+			</div>
+			<p>
+				Use the calculator below to get an approximation of copyediting costs for your genre.
+			</p>
+			<p>
+				<form id="copyedit-calc" onsubmit="return false;" onchange="calcChange('copyedit-calc');">
+					<label for="copyedit-calc-genre">Genre:</label>
+					<div class="select-container">
+						<span class="lnr lnr-chevron-down"></span>
+						<select id="copyedit-calc-genre">
+							<option value="175">Avg - All Genres</option>
+							<option value="145">Romance</option>
+							<option value="155">Thriller, Crime and Mystery</option>
+							<option value="155">Sci-fi</option>
+							<option value="155">Fantasy</option>
+							<option value="165">YA</option>
+							<option value="155">Historical Fiction</option>
+							<option value="175">Literary Fiction</option>
+							<option value="245">Children's Fiction</option>
+							<option value="175">Women's Fiction</option>
+							<option value="175">Memoir</option>
+							<option value="195">Non-Fiction</option>
+						</select>
+					</div>
+					<br />
+					<label for="copyedit-calc-word-count">Approximate Word Count:</label>
+					<div class="select-container">
+						<span class="lnr lnr-chevron-down"></span>
+						<select id="copyedit-calc-word-count">
+							<option value="0">Select Word Count</option>
+							<option value="1">10,000</option>
+							<option value="2">20,000</option>
+							<option value="3">30,000</option>
+							<option value="4">40,000</option>
+							<option value="5">50,000</option>
+							<option value="6">60,000</option>
+							<option value="7">70,000</option>
+							<option value="8">80,000</option>
+							<option value="9">90,000</option>
+							<option value="10">100,000</option>
+							<option value="11">110,000</option>
+							<option value="12">120,000</option>
+							<option value="13">130,000</option>
+							<option value="14">140,000</option>
+							<option value="15">150,000</option>
+							<option value="16">160,000</option>
+							<option value="17">170,000</option>
+							<option value="18">180,000</option>
+							<option value="19">190,000</option>
+							<option value="20">200,000</option>
+						</select>
+					</div>
+					<div class="estimated-cost">
+						<span><strong>Estimated Cost: </strong>$</span>
+						<div id="copyedit-calc-result">0.00</div>
+					</div>
+					<div id="dev-copy-total"></div>
+				</form>
+			</p>
+		</div>
+		<div class="col-lg-4 bg-color_1 scale_1 margin_1">
+			<div class="title text-center">
+				<h3 class="round-heading"><span class="lnr lnr-book"></span></h3>
+				<h3 class="sub-heading">Book Jacket Copy</h3>
+			</div>
+			<div class="text-center">
+				<h3>Flat Rate Fee</h3>
+				<p style="color: #222; font-size: 42px; font-weight: 500; padding: 20px 0 60px;">$250.00</p>
+				<h3 style="font-size: 18px">Discounted Rate</h3>
+				<p style="color: #222; font-size: 36px; font-weight: 500; padding: 20px 0 0;">$200.00</p>
+				<p>When combined with developmental and/or copyediting.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- More Books Modal -->
+
+<div id="more-books-modal" class="container">
+	<div class="row margin_1">
+		<div class="col-md-5 text-center">
+			<img class="rounded_1 img-book" src="images/covers/the-sunflower-girl-cover.jpg" alt="The Sunflower Girl Book Cover" />
+		</div>
+		<div class="col-md-7 text-center">
+			<h3><em>The Sunflower Girl</em></h3>
+			<p><a class="link_1" href="https://www.amazon.com/Sunflower-Girl-Rosanna-Chiofalo/dp/1617739391/ref=as_li_ss_tl?ie=UTF8&qid=1532979110&sr=8-2&keywords=sunflower+girl&linkCode=ll1&tag=apontares-20&linkId=98a682597fb57ffcb8f7e83b195cc463&language=en_US" target="_blank">Buy from Amazon</a></p>
+			<p>
+				<em><strong>Rosanna Chiofalo returns with another evocative, beautifully written novel set against the stunning vistas of Tuscany...</strong></em>
+			</p>
+			<div class="text-left">
+				<p>
+					In the fields around Tuscany in summertime, sunflowers grow in profusion—wave upon wave of gold and green standing tall against the Italian sky. But for Signora Maria Ferraro, the bright yellow blooms carry only bitter memories. Though she loved them as a child, sunflowers have come to represent the most painful episode of her life. Not even her cherished daughter, Anabella, knows what happened to her during World War II, when the Germans overran her hometown of Florence and Signora Ferraro fell in love with a Resistance fighter. In the aftermath of loss and grief she found salvation through an unlikely source-cultivating roses on her farm in the Tuscan countryside. Now the blossoms symbolize everything that is both good and safe, and she nurtures them with as much care as she guards her past.
+				</p>
+				<p>
+					Yet to Anabella, the rose farm that once delighted her has become little more than a pretty prison. Despite her beautiful surroundings, Anabella longs for more. During one of her regular visits to Siena to sell their flowers, Anabella encounters a handsome young artist named Dante Galletti. His canvases are filled with images of a girl who looks just like Anabella-and Dante claims to have seen her in his dreams, running through a sunflower field. Through Dante, Anabella begins to see sunflowers, her cloistered existence, and the world itself through new eyes. As their relationship deepens, Anabella knows she will soon have to choose between loyalty to her mother, and the risks and rewards of living on her own terms.
+				</p>
+				<p>
+					Alternating between the viewpoints of both mother and daughter, and between Italy during World War II and a quarter-century later, The Sunflower Girl is a poignant and moving story of the choices we make in the name of love, and the secrets that echo through generations.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row margin_1">
+		<div class="col-md-5 text-center">
+			<img class="rounded_1 img-book" src="images/covers/rosalias-bittersweet-pastry-shop-cover.jpg" alt="Rosalia's Bittersweet Pastry Shop Book Cover" />
+		</div>
+		<div class="col-md-7 text-center">
+			<h3><em>Rosalia's Bittersweet Pastry Shop</em></h3>
+			<p><a class="link_1" href="http://www.amazon.com/gp/product/1617739375/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1617739375&linkCode=as2&tag=apontares-20&linkId=RUROY2CHGA5IPRTW" target="_blank">Buy from Amazon</a></p>
+			<p>
+				<em><strong>In Rosanna Chiofalo's touching novel, a unique pastry shop features mouthwatering creations that have the power to change one woman's life...</strong></em>
+			</p>
+			<div class="text-left">
+				<p>
+					Food writer Claudia Lombardo has sampled exquisite dishes by the world's greatest chefs. But when she hears about the remarkable desserts that are created in a pastry shop operated out of a convent in the sleepy Italian hillside town of Santa Lucia del Mela, she wants to write a book featuring the sweets and the story behind their creator--Sorella Agata. But the convent's most famous dessert--a Cassata cake--is what really intrigues Claudia.
+				</p>
+				<p>
+					Everyone who samples the cake agrees it is like none other they've tasted. Yet no one can figure out what makes the Cassata so incredibly delicious. Though Sorella Agata insists there is no secret ingredient, Claudia is determined to learn the truth behind the mysterious cake. As she samples each delectable treat--marzipan fruit, rich cream puffs, and decadent cakes--Sorella Agata relates the pastry shop's history and tells of the young woman, Rosalia, who inspired her.
+				</p>
+				<p>
+					Kidnapped and separated from her family, Rosalia is subjected to a terrible ordeal--until the nuns find her. As she heals, she learns the art of pastry making, and soon she even finds love with Antonio--an apprentice in the pastry shop. But her heart still aches for the family she lost. And Rosalia knows she will not be whole again until she is reunited with them.
+				</p>
+				<p>
+					As Claudia unravels the secret of the Cassata cake, she discovers a deeper, fascinating story--one that affirms food can do more than nourish the body...it can stir memories, heal the deepest heartaches, and even act as a bridge to those we love, no matter how far apart.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row margin_1">
+		<div class="col-md-5 text-center">
+			<img class="rounded_1 img-book" src="images/covers/stella-mia-cover.jpg" alt="Stella Mia Book Cover" />
+		</div>
+		<div class="col-md-7 text-center">
+			<h3><em>Stella Mia</em></h3>
+			<p><a class="link_1" href="http://www.amazon.com/gp/product/0758275056/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0758275056&linkCode=as2&tag=apontares-20&linkId=5R4E7NQK5WH6TX4W" target="_blank">Buy from Amazon</a></p>
+			<p>
+				<em><strong>Rosanna Chiofalo's poignant, beautifully written novel evokes the stunning scenery of Sicily and the Aeolian Islands and tells of mothers and daughters, love and sacrifice - and the choices that resound across continents and through generations.</strong></em>
+			</p>
+			<div class="text-left">
+				<p>
+					Julia Parlatone doesn't have much to remember her Italian mother by. A grapevine that Sarina planted still flourishes in the backyard of Julia's childhood home in Astoria, Queens. And there's a song, "Stella Mia," she recalls her mother singing - <em>my star, my star, you are the most beautiful star</em> - until the day she left three-year-old Julia behind and returned to Italy for good.
+				</p>
+				<p>
+					Now a happily married school teacher, Julia tries not to dwell on a past she can't change or on a mother who chose to leave. But in an old trunk in the family basement, she discovers items that belonged to her mother - a songbook, Tarot cards, a Sicilian folk costume - and a diary. Sarina writes unflinchingly of her harsh childhood and of a first, passionate love affair; of blissful months spent living in the stunning coastal resort town of Taormina and the unspoiled Aeolian Islands north of Sicily as well as the reasons she came to New York. By the diary's end, Julia knows she must track down her mother in Italy and piece together the rest of the complex, bittersweet truth - a journey that, for better or worse, will change her own life forever.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row margin_1">
+		<div class="col-md-5 text-center">
+			<img class="rounded_1 img-book" src="images/covers/carissima-cover.jpg" alt="Carissima Book Cover" />
+		</div>
+		<div class="col-md-7 text-center">
+			<h3><em>Carissima</em></h3>
+			<p><a class="link_1" href="http://www.amazon.com/gp/product/0758275048/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0758275048&linkCode=as2&tag=apontares-20" target="_blank">Buy from Amazon</a></p>
+			<p>
+				<em><strong>From Rosanna Chiofalo comes a sumptuous novel that sweeps readers from the Italian-American enclave of Astoria, New York, to the stunning vistas of Rome, and introduces two very different women - in a story of friendship, love, and destiny...</strong></em>
+			</p>
+			<div class="text-left">
+				<p>
+					In college, Pia Santore had dreamed of going to New York and taking the Big Apple by storm with her younger sister Erica. Instead, Pia has arrived in Astoria, Queens, with a prestigious journalism internship at a celebrity magazine...and without Erica. Though the neighborhood has an abundance of appeal - including the delectable confections sold at her Aunt Antoniella's bakery - the pain of losing Erica a few years ago still feels fresh.
+				</p>
+				<p>
+					Pia's arrival coincides with an unexpected sighting. Italian movie icon Francesca Donata is rumored to be staying nearby, every bit as voluptuous and divaesque as in her heyday. With the help of a handsome local artist with ties to Francesca's family, Pia convinces the legend to grant her a series of interviews - even traveling to her house in Rome. In the eternal city, Pia begins to unearth the truth behind the star's fabled romances and tangled past. And here too, where beauty and history mingle in every breathtaking view, and hope shimmers in the Trevi fountain and on the Spanish Steps, Pia gradually learns how to love and when to let go. For when in Rome, you may find your <em>carissima</em> - your dearest one - and you may even find yourself...
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row margin_1">
+		<div class="col-md-5 text-center">
+			<img class="rounded_1 img-book" src="images/covers/bella-fortuna-cover.jpg" alt="Bella Fortuna Book Cover" />
+		</div>
+		<div class="col-md-7 text-center">
+			<h3><em>Bella Fortuna</em></h3>
+			<p><a class="link_1" href="http://www.amazon.com/gp/product/0758266537/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0758266537&linkCode=as2&tag=apontares-20" target="_blank">Buy from Amazon</a></p>
+			<p>
+				<em><strong>In this warm, enchanting debut novel, Rosanna Chiofalo evokes the extraordinary beauty of Venice, the charm of a close-knit New York neighborhood, and the joys of friendship, family, and surprising second chances. . .</strong></em>
+			</p>
+			<div class="text-left">
+				<p>
+					Valentina DeLuca has made hundreds of brides' dreams come true. At Sposa Rosa, the Astoria, New York, boutique where she, her sisters, and their mother design and sew couture knock-off gowns, she can find the perfect style for even the most demanding customer. Now, it's her turn. Valentina has loved Michael Carello ever since he rescued her from a cranky shopkeeper when she was ten years old. He's handsome, chivalrous, and loyal. And in a few weeks, she's going to marry him -- in Venice.
+				</p>
+				<p>
+					But just when she thinks everything is falling into place, Valentina is forced to re-examine her life to see what truly makes her happy. And as she soon learns, in a place as magical as Venice, what seems like misfortune can turn out to be anything but, although who knows what may be waiting around the next corner? The chance to enjoy a moonlit gondola ride, to sip Prosecco in St. Mark's Square, to eat mouthwatering gelato, to put aside "sensible" for once and see where the warm Italian breezes guide her as she visits all the sights she's dreamed of: The Doge's Palace, Il Rialto, the little islands of Murano and Burano. And maybe, along the way, to discover that bella fortuna -- good luck -- isn't what you're given, but what you make.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row margin_1">
+		<div class="col-md-5 text-center">
+			<img class="rounded_1 img-book" src="images/covers/when-the-snow-falls-cover.jpg" alt="When the Snow Falls Book Cover" />
+		</div>
+		<div class="col-md-7 text-center">
+			<h3><em>When the Snow Falls</em></h3>
+			<p><a class="link_1" href="http://www.amazon.com/gp/product/1420131060/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1420131060&linkCode=as2&tag=apontares-20&linkId=BMK4FLKBTHILDRVS" target="_blank">Buy from Amazon</a></p>
+			<p>
+				<strong>
+					An e-book New York Times bestseller and a print USA Today bestseller!
+					<br />
+					Featuring <em>Seven Days of Christmas</em>, a novella by Rosanna Chiofalo
+				</strong>
+			</p>
+			<div class="text-left">
+				<p>
+					Rosanna Chiofalo's "Seven Days of Christmas" introduces Bianca Simone, who received a wonderful early Christmas gift from her boyfriend, Mark, five years ago-a week amid the stunning Alpine scenery of Innsbruck, Austria. Now she's back under very different circumstances, but Mark has one more special gift in mind.
+				</p>
+				<p>
+					In "Candy Canes and Cupid" by #1 New York Times bestselling author Fern Michaels, all private investigator Hannah Ray wants for Christmas is a quiet day at her Florida beachfront condo. When her biggest client insists she join him on a Colorado ski trip, she has little choice-but what she finds on her arrival could melt the coldest heart.
+				</p>
+				<p>
+					In "White Hot Christmas" by Nancy Bush, aspiring PI Jane Kelly likes to pretend she's a bah-humbug kind of girl, but she's had mistletoe on the brain ever since she shared a kiss with her boss, Dwayne. Before she can hope for a repeat performance, Jane must solve a kidnapping that's as twisted as a candy cane-and not nearly as sweet.
+				</p>
+				<p>
+					In "A Smoky Mountain Christmas" by Lin Stepp, Veda Trent is back in Townsend to fill in as temporary manager of the Crafts Co-Op, but she's not planning to stay. Though the mountain town is small, it holds lots of unsettling memories. Yet the wind can change, bringing with it new opportunities-and the chance to create the kind of Christmas for which Veda has always longed.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
