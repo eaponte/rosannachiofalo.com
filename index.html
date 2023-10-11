@@ -128,7 +128,7 @@
 					</div>
 				</div>
 				<div class="col-md-12">
-					<form id="contactForm" action="https://api.staticforms.xyz/submit" method="post" onsubmit="formSubmitted();return false">
+					<form id="contactForm" action="https://api.staticforms.xyz/submit" method="post" onsubmit="alert('Your message will be sent when you click [OK]')">
 						<fieldset class="first-section">
 							<label for="nameID">Name</label>
 							<input type="text" class="validated-field" id="nameID" name="name" placeholder="Enter Your Name (Required)"  autocomplete="on" /> 
@@ -141,6 +141,7 @@
 							<input type="hidden" name="accessKey" value="413899d8-837c-4985-a70b-94bcaa94f9c1">
 							<!-- Specify @ as reply to value if you want it to be customers email -->
 							<input type="hidden" name="replyTo" value="@">
+							<input type="hidden" name="redirectTo" value="https://rosannachiofalo.com/">
 							<!-- If we receive data in the honeypot field, the submission will be ignored -->
 							<input type="text" name="honeypot" style="display: none;">
 						</fieldset>

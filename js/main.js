@@ -130,16 +130,15 @@
 		item.addEventListener('input', validateForm);
 	});
 
-	const messageSent = document.getElementById('messageSent');
+	// const messageSent = document.getElementById('messageSent');
 
-	const formSubmitted = () => {
-		//alert('Your message has been sent!');
-		messageSent.classList.add('show');
-		setTimeout(() => {
-			document.getElementById('contactForm').reset();
-			validateForm();
-			messageSent.classList.remove('show');
-		}, 5000);
-	};
+	// const formSubmitted = () => {
+	// 	messageSent.classList.add('show');
+	// 	setTimeout(() => {
+	// 		document.getElementById('contactForm').reset();
+	// 		validateForm();
+	// 		messageSent.classList.remove('show');
+	// 	}, 5000);
+	// };
 
 //});
