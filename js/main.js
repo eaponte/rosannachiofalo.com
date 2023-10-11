@@ -104,23 +104,42 @@
 			$("body").removeClass("overflow-hidden");
 		});
 
-	/***** Pricing Calculator *****/
+	/***** Contact Form Validation *****/
 
-	function calcChange(formID) {
-		$("#" + formID + "-result").
-			html(
-				($("#" + formID + "-genre").find(":selected").val() * $("#" + formID + "-word-count").find(":selected").val()).toFixed(2)
-			);
-		if($("#dev-calc-result").text() > 0 && $("#copyedit-calc-result").text() > 0) {
-			$("#dev-copy-total").html(
-				"Developmental + Copyediting = " + "$" + 
-				Math.round(((parseInt($("#dev-calc-result").text()) + parseInt($("#copyedit-calc-result").text())) *.85)).toFixed(2) + 
-				"<br />" +
-				"(This represents a 15% discount)"
-			);
-		} else {
-			$("#dev-copy-total").html("");
-		}
-	}
+	const nameField = document.getElementById('nameID');
+
+	const emailField = document.getElementById('emailID');
+	const isEmailValid = document.getElementById('isEmailValid');
+	const emailRegex = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/u);
+
+	const messageField = document.getElementById('messageID');
+
+	const submitBtn = document.getElementById('submitBtn');
+
+	const validateForm = () => {
+		emailField.value.match(emailRegex) && nameField.value !== "" && messageField.value !== ""
+		? submitBtn.disabled = false : submitBtn.disabled = true;
+		// if email address is valid, then checkmark, otherwise X mark
+		emailField.value.match(emailRegex) ? isEmailValid.innerHTML = "<span style='color: #5CB85C; font-weight: bold;'>&#10004;</span>" : isEmailValid.innerHTML = "<span style='color: #D9534F; font-weight: bold;'>&#10006;</span>";
+	};
+
+	let validatedFields = document.querySelectorAll('.validated-field');
+
+	// check for any input changes including cut or paste actions with listener 'input'
+	validatedFields.forEach((item) => {
+		item.addEventListener('input', validateForm);
+	});
+
+	const messageSent = document.getElementById('messageSent');
+
+	const formSubmitted = () => {
+		//alert('Your message has been sent!');
+		messageSent.classList.add('show');
+		setTimeout(() => {
+			document.getElementById('contactForm').reset();
+			validateForm();
+			messageSent.classList.remove('show');
+		}, 5000);
+	};
 
 //});

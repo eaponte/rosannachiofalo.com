@@ -268,10 +268,73 @@ a.link_2:hover {
 
 /********** Contact **********/
 
-.contact-iframe {
-	width: 100%;
+#contactForm {
+	position: relative;
+	width: 90%;
 	max-width: 640px;
-	height: 840px;
+	margin: auto;
+}
+
+#contactForm label, #contactForm input, #contactForm textarea {
+	display: block;
+	width: 100%;
+}
+
+#contactForm input, #contactForm textarea {
+	margin-bottom: 32px;
+	padding: 5px;
+	border: 1px solid #8490ff;
+	border-radius: 4px;
+}
+
+#contactForm #emailID {
+	padding-right: 32px;
+}
+
+#contactForm #isEmailValid {
+	display: inline-block;
+	position: absolute;
+	top: 135px;
+	right: 0;
+	padding-right: 12px;
+}
+
+#contactForm textarea {
+	height: 300px;
+}
+
+#submitBtn {
+	position: relative;
+	display: inline-block;
+	min-width: 210px;
+	padding: 10px 30px;
+	color: #8490ff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: transparent;
+	border: 1px solid #8490ff;
+	border-radius: 4px;
+	transition: all 0.2s;
+}
+
+#submitBtn:hover:enabled {
+	color: #fff;
+	background-color: #8490ff;
+}
+
+#submitBtn:disabled {
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+
+#messageSent {
+	display: none;
+	margin-top: 10px;
+	color: #5CB85C;
+}
+
+#messageSent.show {
+	display: block;
 }
 
 /********** Footer **********/

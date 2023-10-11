@@ -127,8 +127,26 @@
 						<h2>Contact</h2>
 					</div>
 				</div>
-				<div class="col-md-12 text-center">
-					<iframe class="contact-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScOkZvDUrRmxpEHNYmCuroZmO_GgHQYsTD9ZKikxEHbpWbpOw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+				<div class="col-md-12">
+					<form id="contactForm" action="https://api.staticforms.xyz/submit" method="post" onsubmit="formSubmitted();return false">
+						<fieldset class="first-section">
+							<label for="nameID">Name</label>
+							<input type="text" class="validated-field" id="nameID" name="name" placeholder="Enter Your Name (Required)"  autocomplete="on" /> 
+				
+							<label for="emailID">Email</label>
+							<input type="email" class="validated-field" id="emailID" name="email" placeholder="Enter Your Email (Required)"  autocomplete="on" /> <span id="isEmailValid"></span>
+				
+							<label for="messageID">Message</label>
+							<textarea class="validated-field" id="messageID" name="message" placeholder="Write Your Message (Required)" ></textarea>
+							<input type="hidden" name="accessKey" value="413899d8-837c-4985-a70b-94bcaa94f9c1">
+							<!-- Specify @ as reply to value if you want it to be customers email -->
+							<input type="hidden" name="replyTo" value="@">
+							<!-- If we receive data in the honeypot field, the submission will be ignored -->
+							<input type="text" name="honeypot" style="display: none;">
+						</fieldset>
+						<button id="submitBtn" type="submit" disabled>Send Message</button>
+						<span id="messageSent">Your message has been sent!</span>
+					</form>
 				</div>
 			</div>
 		</div>
