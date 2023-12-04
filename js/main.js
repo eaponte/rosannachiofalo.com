@@ -112,12 +112,35 @@
 	const isEmailValid = document.getElementById('isEmailValid');
 	const emailRegex = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/u);
 
+	let images = [{
+        text: "dog",
+        img: "./images/form-verification/dog.png"
+      },
+      {
+        text: "duck",
+        img: "./images/form-verification/duck.png"
+      },
+      {
+        text: "elephant",
+        img: "./images/form-verification/elephant.png"
+      },
+      {
+        text: "rabbit",
+        img: "./images/form-verification/rabbit.png"
+      }
+    ];
+
+	let image = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("formVerification").innerHTML = '<img src="' + image.img + '" alt="' + image.text + '">';
+
+	const verifyField = document.getElementById('verifyID');
+
 	const messageField = document.getElementById('messageID');
 
 	const submitBtn = document.getElementById('submitBtn');
 
 	const validateForm = () => {
-		emailField.value.match(emailRegex) && nameField.value !== "" && messageField.value !== ""
+		emailField.value.match(emailRegex) && nameField.value !== "" && messageField.value !== "" && verifyField.value == image.text
 		? submitBtn.disabled = false : submitBtn.disabled = true;
 		// if email address is valid, then checkmark, otherwise X mark
 		emailField.value.match(emailRegex) ? isEmailValid.innerHTML = "<span style='color: #5CB85C; font-weight: bold;'>&#10004;</span>" : isEmailValid.innerHTML = "<span style='color: #D9534F; font-weight: bold;'>&#10006;</span>";
