@@ -130,6 +130,10 @@
 				<div class="col-md-12">
 					<form id="contactForm" action="https://api.staticforms.xyz/submit" method="post" onsubmit="alert('Your message will be sent when you click [OK]')">
 						<fieldset class="first-section">
+							<div style="display: none;">
+								<input type="checkbox" id="botCheckID" name="botCheck" value="botCheck" style="display: inline-block; width: auto;">
+								<label for="botCheckID" style="display: inline-block; width: auto;"> Do you agree to the terms and conditions?</label>
+							</div>
 							<label for="nameID">Name</label>
 							<input type="text" class="validated-field" id="nameID" name="name" placeholder="Enter Your Name (Required)"  autocomplete="on" /> 
 				
@@ -141,7 +145,7 @@
 
 							<label for="verifyID">Are You Human?</label>
 							<div id="formVerification"></div>
-							<input type="text" class="validated-field" id="verifyID" name="verify" placeholder="Name the Animal in One Lowercase Word (Required)" />
+							<input type="text" class="validated-field" id="verifyID" name="verify" placeholder="Name the Animal in One Word (Required)" />
 
 							<input type="hidden" name="accessKey" value="413899d8-837c-4985-a70b-94bcaa94f9c1">
 							<!-- Specify @ as reply to value if you want it to be customers email -->

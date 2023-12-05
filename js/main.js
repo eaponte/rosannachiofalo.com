@@ -106,6 +106,8 @@
 
 	/***** Contact Form Validation *****/
 
+	const botCheckBox = document.getElementById('botCheckID');
+
 	const nameField = document.getElementById('nameID');
 
 	const emailField = document.getElementById('emailID');
@@ -140,7 +142,7 @@
 	const submitBtn = document.getElementById('submitBtn');
 
 	const validateForm = () => {
-		emailField.value.match(emailRegex) && nameField.value !== "" && messageField.value !== "" && verifyField.value == image.text
+		emailField.value.match(emailRegex) && nameField.value !== "" && messageField.value !== "" && verifyField.value.toLowerCase() === image.text && botCheckBox.checked == false
 		? submitBtn.disabled = false : submitBtn.disabled = true;
 		// if email address is valid, then checkmark, otherwise X mark
 		emailField.value.match(emailRegex) ? isEmailValid.innerHTML = "<span style='color: #5CB85C; font-weight: bold;'>&#10004;</span>" : isEmailValid.innerHTML = "<span style='color: #D9534F; font-weight: bold;'>&#10006;</span>";
@@ -152,6 +154,12 @@
 	validatedFields.forEach((item) => {
 		item.addEventListener('input', validateForm);
 	});
+
+	// If checkbox status changes, then it's a bot, so reload the page
+
+	botCheckBox.addEventListener('change', () => {
+		location.reload();
+	  });
 
 	// const messageSent = document.getElementById('messageSent');
 
