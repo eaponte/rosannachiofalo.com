@@ -161,6 +161,11 @@
 		location.reload();
 	  });
 
+	  // disable pasting into form fields
+	  $('body').bind('paste', function(e) {
+		e.preventDefault();
+	  });
+
 	// const messageSent = document.getElementById('messageSent');
 
 	// const formSubmitted = () => {
