@@ -104,77 +104,94 @@
 			$("body").removeClass("overflow-hidden");
 		});
 
-	/***** Contact Form Validation *****/
 
-	const botCheckBox = document.getElementById('botCheckID');
+		/***** Form Section *****/
 
-	const nameField = document.getElementById('nameID');
+	// Function to check if contact section is in the viewport
 
-	const emailField = document.getElementById('emailID');
-	const isEmailValid = document.getElementById('isEmailValid');
-	const emailRegex = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/u);
+	let isElementInViewport = (element) => {
+		let rect = element.getBoundingClientRect();
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		);
+   }
 
-	let images = [{
-        text: "dog",
-        img: "./images/form-verification/dog.png"
-      },
-      {
-        text: "duck",
-        img: "./images/form-verification/duck.png"
-      },
-      {
-        text: "elephant",
-        img: "./images/form-verification/elephant.png"
-      },
-      {
-        text: "rabbit",
-        img: "./images/form-verification/rabbit.png"
-      }
-    ];
+   // Function to lazy load form
+	let lazyLoadContent = () => {
+		let lazyContentElement = document.getElementById("form-content");
+		if (isElementInViewport(lazyContentElement)) {
+			// Add your logic to load the content for the element here
+			$("#form-content").load(
+				"./form-content/form-content.html #contactForm"
+			);
 
-	let image = images[Math.floor(Math.random() * images.length)];
-    document.getElementById("formVerification").innerHTML = '<img src="' + image.img + '" alt="' + image.text + '">';
+			setTimeout(() => {
+				/***** Contact Form Validation *****/
 
-	const verifyField = document.getElementById('verifyID');
+				let nameField = document.getElementById('nameID');
 
-	const messageField = document.getElementById('messageID');
+				let emailField = document.getElementById('emailID');
+				let isEmailValid = document.getElementById('isEmailValid');
+				let emailRegex = new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/u);
 
-	const submitBtn = document.getElementById('submitBtn');
+				/* let images = [{
+					text: "dog",
+					img: "./images/form-verification/dog.png"
+				},
+				{
+					text: "duck",
+					img: "./images/form-verification/duck.png"
+				},
+				{
+					text: "elephant",
+					img: "./images/form-verification/elephant.png"
+				},
+				{
+					text: "rabbit",
+					img: "./images/form-verification/rabbit.png"
+				}
+				];
 
-	const validateForm = () => {
-		emailField.value.match(emailRegex) && nameField.value !== "" && messageField.value !== "" && verifyField.value.toLowerCase() === image.text && botCheckBox.checked == false
-		? submitBtn.disabled = false : submitBtn.disabled = true;
-		// if email address is valid, then checkmark, otherwise X mark
-		emailField.value.match(emailRegex) ? isEmailValid.innerHTML = "<span style='color: #5CB85C; font-weight: bold;'>&#10004;</span>" : isEmailValid.innerHTML = "<span style='color: #D9534F; font-weight: bold;'>&#10006;</span>";
-	};
+				let image = images[Math.floor(Math.random() * images.length)];
+				document.getElementById("formVerification").innerHTML = '<img src="' + image.img + '" alt="' + image.text + '">';
 
-	let validatedFields = document.querySelectorAll('.validated-field');
+				const verifyField = document.getElementById('verifyID'); */
 
-	// check for any input changes including cut or paste actions with listener 'input'
-	validatedFields.forEach((item) => {
-		item.addEventListener('input', validateForm);
-	});
+				let messageField = document.getElementById('messageID');
 
-	// If checkbox status changes, then it's a bot, so reload the page
+				let submitBtn = document.getElementById('submitBtn');
 
-	botCheckBox.addEventListener('change', () => {
-		location.reload();
-	  });
+				let validateForm = () => {
+					// emailField.value.match(emailRegex) && nameField.value !== "" && messageField.value !== "" && verifyField.value.toLowerCase() === image.text && botCheckBox.checked == false
+					emailField.value.match(emailRegex) && nameField.value !== "" && messageField.value !== "" 
+					? submitBtn.disabled = false : submitBtn.disabled = true;
+					// if email address is valid, then checkmark, otherwise X mark
+					emailField.value.match(emailRegex) ? isEmailValid.innerHTML = "<span style='color: #5CB85C; font-weight: bold;'>&#10004;</span>" : isEmailValid.innerHTML = "<span style='color: #D9534F; font-weight: bold;'>&#10006;</span>";
+				};
 
-	  // disable pasting into form fields
-	  $('body').bind('paste', function(e) {
+				let validatedFields = document.querySelectorAll('.validated-field');
+
+				// check for any input changes including cut or paste actions with listener 'input'
+				validatedFields.forEach((item) => {
+					item.addEventListener('input', validateForm);
+				});
+			  }, 700)
+		}
+   }
+
+	// Attach the lazyLoadContent function to the scroll event
+	window.addEventListener("scroll", lazyLoadContent);
+
+	// Call the function initially to load the visible content on page load
+	//lazyLoadContent();
+
+
+	// disable pasting into form fields
+	$('body').bind('paste', function(e) {
 		e.preventDefault();
-	  });
-
-	// const messageSent = document.getElementById('messageSent');
-
-	// const formSubmitted = () => {
-	// 	messageSent.classList.add('show');
-	// 	setTimeout(() => {
-	// 		document.getElementById('contactForm').reset();
-	// 		validateForm();
-	// 		messageSent.classList.remove('show');
-	// 	}, 5000);
-	// };
+	});
 
 //});
